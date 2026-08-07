@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@paystack/inline-js':
+        specifier: ^2.24.0
+        version: 2.24.0
     devDependencies:
       '@sveltejs/adapter-cloudflare':
         specifier: ^7.2.8
@@ -436,6 +440,10 @@ packages:
 
   '@oxc-project/types@0.143.0':
     resolution: {integrity: sha512-u6JZdLBTLotrNC9Vd6vPssINdzcCzleKAH6EJKImQb7GtYvX5keN2dxkoK44stCc4tffE6QQRtZTXVSzsLUlWA==}
+
+  '@paystack/inline-js@2.24.0':
+    resolution: {integrity: sha512-78O19c7voo02eD1w9qHh74Snuy4u8R301LhHaiPZdNnRv4jlcWCKKzaGslanjwhyaftaSlhaIlV3Cqi6MGIJIQ==}
+    engines: {node: '>= 22.0.0'}
 
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
@@ -1520,6 +1528,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
 
   '@oxc-project/types@0.143.0': {}
+
+  '@paystack/inline-js@2.24.0': {}
 
   '@polka/url@1.0.0-next.29': {}
 

@@ -11,5 +11,14 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"workers_dev": true,
-	"preview_urls": true
+	"preview_urls": true,
+	"r2_buckets": [
+		{
+			"binding": "F",
+			"bucket_name": "scn"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
 }
