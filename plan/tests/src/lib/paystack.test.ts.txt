@@ -29,7 +29,7 @@ describe('get_secret', () => {
 
 describe('paystack_init', () => {
 	it('sends the amount in kobo with our own reference and callback', async () => {
-		const fetch_ = vi.fn(() =>
+		const fetch_ = vi.fn((..._a: unknown[]) =>
 			ok({ authorization_url: 'https://pay/x', access_code: 'AC1', reference: 'scn_1' })
 		);
 		vi.stubGlobal('fetch', fetch_);
@@ -68,7 +68,7 @@ describe('paystack_init', () => {
 
 describe('paystack_verify', () => {
 	it('asks about the escaped reference and returns the transaction', async () => {
-		const fetch_ = vi.fn(() =>
+		const fetch_ = vi.fn((..._a: unknown[]) =>
 			ok({
 				status: 'success',
 				reference: 'scn a',
