@@ -4,4 +4,4 @@ Disallow: /r
 Disallow: /d/
 Disallow: /api/
 
-Sitemap: https://scn.apexlinks.org/sitemap.xml
+Sitemap: https://kekongknowledge.apexlinks.org/sitemap.xml

@@ -16,7 +16,7 @@
 	<meta property="og:title" content={b.t} />
 	<meta property="og:description" content={b.s} />
 	<meta property="og:image" content="/covers/{b.i}.webp" />
-	<link rel="canonical" href="https://scn.apexlinks.org/b/{b.i}" />
+	<link rel="canonical" href="https://kekongknowledge.apexlinks.org/b/{b.i}" />
 </svelte:head>
 
 <article class="px-5 pt-20 sm:px-8">

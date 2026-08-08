@@ -14,7 +14,7 @@
 	"preview_urls": true,
 	"routes": [
 		{
-			"pattern": "scn.apexlinks.org",
+			"pattern": "kekongknowledge.apexlinks.org",
 			"custom_domain": true
 		}
 	],

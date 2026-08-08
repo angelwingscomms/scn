@@ -3,7 +3,7 @@ import type { RequestHandler } from './$types';
 
 export const prerender = true;
 
-const SITE = 'https://scn.apexlinks.org';
+const SITE = 'https://kekongknowledge.apexlinks.org';
 
 export const GET: RequestHandler = () => {
 	const urls = ['', ...books.map((b) => `/b/${b.i}`)]
