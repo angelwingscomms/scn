@@ -36,11 +36,11 @@ export const cats: Record<Cat, { k: string; n: string; s: string }> = {
 export const books: Book[] = [
 	{
 		i: 'killer-collection',
-		t: 'The Silent Killer Collection',
+		t: 'The Silent Killer Collection 2.0',
 		s: 'five health blueprints — heart, blood pressure, diabetes, liver, kidney — and the full body reset',
 		c: 'b',
 		p: 111,
-		a: 1200000,
+		a: 450000,
 		h: 'millions feel perfectly healthy until the day a silent disease changes everything.',
 		d: 'the whole prevention series in one file. five complete blueprints, one organ at a time, each with the early warning signs people talk themselves out of, the everyday habits that cause the damage, and a four-week plan to turn it around. the bonus full-body reset runs the whole thing day by day.',
 		l: [
@@ -60,7 +60,7 @@ export const books: Book[] = [
 		s: 'the simple blueprint for your heart, brain and lungs before chronic disease takes control',
 		c: 'b',
 		p: 33,
-		a: 400000,
+		a: 300000,
 		h: 'chronic disease is not built overnight. it is built out of small daily decisions.',
 		d: 'the shortest way in. three conditions that account for more deaths than anything else — heart disease, stroke, lower respiratory infection — explained plainly, with the warning signs your body gives months in advance and a thirty-day protection challenge you can actually finish.',
 		l: [
@@ -80,7 +80,7 @@ export const books: Book[] = [
 		s: 'turning free ai tools into daily income — no coding, no tech skills, no big capital',
 		c: 'm',
 		p: 86,
-		a: 750000,
+		a: 300000,
 		h: 'ai is not the business. ai is the worker. you are the business owner.',
 		d: 'most ai books explain how ai works. nobody is asking that. people are asking what they can sell this week. this one skips the history and the jargon and goes straight to income you can start with chatgpt and claude, using the free tiers, from a phone if that is what you have.',
 		l: [
@@ -98,7 +98,7 @@ export const books: Book[] = [
 		s: 'the premium toolkit — 25 side hustles, 1,000 prompts, templates, automations, a 30-day challenge',
 		c: 'm',
 		p: 38,
-		a: 950000,
+		a: 450000,
 		h: 'the 2.0 is not more reading. it is the assets.',
 		d: 'ten parts and seven bonuses of things you use rather than things you read. the side hustles are costed and scripted, the prompts are ready to paste, the templates are ready to send, and the thirty-day challenge tells you what to do each morning.',
 		l: [
@@ -119,7 +119,7 @@ export const books: Book[] = [
 		s: 'why employed people are still broke, and the five income leaks draining your future',
 		c: 'm',
 		p: 21,
-		a: 250000,
+		a: 200000,
 		h: 'you are paid every month and you are still not building anything. that is a leak, not bad luck.',
 		d: 'silent poverty is having a job, looking fine, and being one unexpected expense away from trouble. this names the five leaks doing it — and gives a thirty-day reset that starts with awareness and ends with a second income layer.',
 		l: [
@@ -140,7 +140,7 @@ export const books: Book[] = [
 		s: 'the skills quietly paying in dollars while the classroom teaches something else',
 		c: 'm',
 		p: 49,
-		a: 450000,
+		a: 250000,
 		h: 'you did everything they told you to do. that was the problem.',
 		d: 'a wake-up call for anyone holding a certificate and no direction. it explains why the job market stopped matching the curriculum, which digital skills are actually being paid for right now, and how to pick one and get your first payment — in practical steps, not motivation.',
 		l: [
@@ -159,7 +159,7 @@ export const books: Book[] = [
 		s: 'proven strategies to score high, with the full 2026/2027 syllabus for every required subject',
 		c: 'x',
 		p: 48,
-		a: 500000,
+		a: 200000,
 		h: 'past questions repeat. frequency is a map. almost nobody reads it.',
 		d: 'the updated syllabus and the method in one file. it teaches the three-step system — past questions, then frequency, then priority — then hands you a thirty-day plan split into foundation, practice and simulation, and names the study myths that quietly cost candidates their score.',
 		l: [
@@ -180,7 +180,7 @@ export const books: Book[] = [
 		s: 'a 90-day toolkit for excellent grades without stress, confusion or last-minute panic',
 		c: 'x',
 		p: 42,
-		a: 500000,
+		a: 200000,
 		h: 'students do not fail waec for being unintelligent. they fail because nobody showed them how marks are awarded.',
 		d: 'most waec material tells students to read harder. this one sells the system: how examiners award marks, how to study less and remember more, how to turn a weak subject into a passable one, and a ninety-day plan that ends with a student who is ready instead of frightened.',
 		l: [
@@ -202,7 +202,7 @@ export const bundles: Bundle[] = [
 		i: 'bundle-all',
 		t: 'The Whole Library',
 		s: 'all eight blueprints — the body, the money and the exams — at half of what they cost apart',
-		a: 2500000,
+		a: 1150000,
 		m: [
 			'killer-collection',
 			'killer-reset',
@@ -218,21 +218,21 @@ export const bundles: Bundle[] = [
 		i: 'bundle-body',
 		t: 'The Body',
 		s: 'the full prevention series and the reset that starts it',
-		a: 1150000,
+		a: 550000,
 		m: ['killer-collection', 'killer-reset']
 	},
 	{
 		i: 'bundle-money',
 		t: 'The Money',
 		s: 'both ai toolkits, the leaks that drain a salary, and the skills nobody taught you',
-		a: 1500000,
+		a: 750000,
 		m: ['ai-cashflow', 'ai-cashflow-2', 'silent-poverty', 'digital-skill']
 	},
 	{
 		i: 'bundle-exams',
 		t: 'The Exams',
 		s: 'jamb and waec, the syllabus and the system',
-		a: 700000,
+		a: 300000,
 		m: ['jamb', 'waec']
 	}
 ];
