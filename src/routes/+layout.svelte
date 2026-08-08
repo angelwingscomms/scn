@@ -14,6 +14,7 @@
 	<meta property="og:site_name" content="Dr. Michael Kekong" />
 	<meta property="og:image" content="/og.jpg" />
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kekongknowledge.apexlinks.org" />
 	<link rel="canonical" href="https://kekongknowledge.apexlinks.org" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>

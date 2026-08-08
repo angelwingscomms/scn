@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """pulls the embedded cover image out of each source PDF and renders it as a
-1100x1100 'developing plate': whole cover contained on plate-black, radial
+1100x1100 (plus a 750px -s.webp for the grid srcset) 'developing plate': whole cover contained on plate-black, radial
 vignette so every title sits in the same pool of light. writes static/covers/<slug>.webp
 
 deps: pypdf, pillow, numpy   (pip install --user pypdf pillow numpy)
@@ -15,6 +15,7 @@ from PIL import Image, ImageEnhance
 SRC = os.path.expanduser("~/Downloads")
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "static", "covers")
 SIZE = 1100
+GRID = 750
 PLATE = (8, 9, 12)
 
 BOOKS = {
@@ -55,8 +56,10 @@ for slug, name in BOOKS.items():
     arr = np.asarray(canvas).astype(np.float32)
     arr = plate + (arr - plate) * vignette[..., None]
     dest = os.path.join(OUT, slug + ".webp")
-    Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).save(
-        dest, "WEBP", quality=86, method=6
+    plated = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+    plated.save(dest, "WEBP", quality=86, method=6)
+    plated.resize((GRID, GRID), Image.LANCZOS).save(
+        os.path.join(OUT, slug + "-s.webp"), "WEBP", quality=80, method=6
     )
     os.remove(tmp)
     print(f"ok {slug}.webp {os.path.getsize(dest)} bytes")

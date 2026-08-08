@@ -16,5 +16,4 @@ get () { # $1=out  $2=google font query
 get static/fonts/InstrumentSerif-Regular.woff2 'Instrument+Serif'
 get static/fonts/InstrumentSerif-Italic.woff2  'Instrument+Serif:ital@1'
 get static/fonts/InstrumentSans-Regular.woff2  'Instrument+Sans:wght@400'
-get static/fonts/InstrumentSans-Medium.woff2   'Instrument+Sans:wght@500'
 get static/fonts/JetBrainsMono-Regular.woff2   'JetBrains+Mono:wght@400'

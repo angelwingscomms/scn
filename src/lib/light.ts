@@ -35,12 +35,18 @@ export const light: Action<HTMLElement> = (node) => {
 		frame = requestAnimationFrame(step);
 	};
 
+	const onscreen = new IntersectionObserver((records) => {
+		cancelAnimationFrame(frame);
+		if (records[records.length - 1].isIntersecting) frame = requestAnimationFrame(step);
+	});
+
 	node.addEventListener('pointermove', aim, { passive: true });
-	frame = requestAnimationFrame(step);
+	onscreen.observe(node);
 
 	return {
 		destroy() {
 			cancelAnimationFrame(frame);
+			onscreen.disconnect();
 			node.removeEventListener('pointermove', aim);
 		}
 	};

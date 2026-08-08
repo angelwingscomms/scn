@@ -10,6 +10,14 @@
 		name="description"
 		content="Prevention, income and exam blueprints by Dr. Michael Kekong. Instant PDF delivery, paid with card, transfer, USSD, Opay or PalmPay."
 	/>
+	<meta
+		property="og:title"
+		content="Dr. Michael Kekong — eight blueprints on the body, the money and the exams"
+	/>
+	<meta
+		property="og:description"
+		content="Prevention, income and exam blueprints by Dr. Michael Kekong. Instant PDF delivery, paid with card, transfer, USSD, Opay or PalmPay."
+	/>
 </svelte:head>
 
 <Hero />

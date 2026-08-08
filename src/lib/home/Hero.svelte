@@ -35,7 +35,7 @@
 
 <section
 	use:light
-	class="relative isolate flex min-h-[92svh] flex-col justify-center overflow-hidden px-5 pt-24 pb-20 sm:px-8"
+	class="relative isolate flex min-h-[92svh] flex-col justify-center overflow-hidden px-5 pt-16 pb-16 sm:px-8 sm:pt-20 sm:pb-20"
 >
 	<div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
 		<div class="field-dim absolute inset-0">{@render field()}</div>
@@ -72,7 +72,9 @@
 			</a>
 		</div>
 
-		<p class="mt-14 font-mono text-[0.58rem] uppercase tracking-[0.22em] text-ash/70">
+		<p
+			class="mt-14 hidden font-mono text-[0.58rem] uppercase tracking-[0.22em] text-ash/70 pointer-fine:block"
+		>
 			move your cursor — the page develops where you look
 		</p>
 	</div>
