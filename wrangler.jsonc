@@ -12,6 +12,12 @@
 	},
 	"workers_dev": true,
 	"preview_urls": true,
+	"routes": [
+		{
+			"pattern": "scn.apexlinks.org",
+			"custom_domain": true
+		}
+	],
 	"r2_buckets": [
 		{
 			"binding": "F",
