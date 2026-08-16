@@ -44,7 +44,7 @@
 
 	<div class="mx-auto w-full max-w-[88rem]">
 		<p class="font-mono text-[0.6rem] uppercase tracking-[0.24em] text-ash sm:text-[0.66rem]">
-			dr. michael kekong · eight blueprints · pdf · instant
+			michael kekong · eight blueprints · pdf · instant
 		</p>
 
 		<h1 class="mt-7 max-w-[15ch] font-display text-mega">

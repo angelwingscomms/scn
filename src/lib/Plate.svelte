@@ -12,7 +12,7 @@
 				src="/covers/{b.i}-s.webp"
 				srcset="/covers/{b.i}-s.webp 750w, /covers/{b.i}.webp 1100w"
 				sizes="(min-width: 1280px) 20rem, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
-				alt="cover of {b.t} by Dr. Michael Kekong"
+				alt="cover of {b.t} by Michael Kekong"
 				width="1100"
 				height="1100"
 				loading="lazy"

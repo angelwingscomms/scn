@@ -22,7 +22,7 @@ export type Bundle = {
 };
 
 export const author = {
-	n: 'Dr. Michael Kekong',
+	n: 'Michael Kekong',
 	w: '2348164153030',
 	d: '0816 415 3030'
 };
