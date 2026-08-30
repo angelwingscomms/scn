@@ -42,9 +42,9 @@
 			<button
 				type="button"
 				onclick={() => open_buy(all.i)}
-				class="rounded-[2px] border border-ember/60 px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-ember transition-colors duration-200 hover:bg-ember hover:text-plate"
+				class="rounded-[2px] bg-ember px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-plate transition-opacity duration-200 hover:opacity-85 sm:border sm:border-ember/60 sm:bg-transparent sm:text-ember sm:hover:bg-ember sm:hover:text-plate"
 			>
-				all eight — {naira(all.a)}
+				all nine — {naira(all.a)}
 			</button>
 		</div>
 	</nav>

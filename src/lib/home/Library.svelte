@@ -13,9 +13,14 @@
 				nothing here is a secret. <em class="text-lume">it is just unlit.</em>
 			</h2>
 		</div>
+		<div class="sticky top-[3.4rem] z-30 -mx-5 mt-8 flex gap-2 overflow-x-auto border-y border-plate-3/40 bg-plate/90 px-5 py-3 backdrop-blur-md sm:mx-0 sm:rounded-[2px] sm:border">
+			{#each shelves as c (c)}
+				<a href="#shelf-{c}" class="whitespace-nowrap rounded-full border border-plate-3 px-4 py-1.5 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ash transition-colors hover:border-lume hover:text-lume">{cats[c].n}</a>
+			{/each}
+		</div>
 
 		{#each shelves as c (c)}
-			<div class="mt-24 sm:mt-32">
+			<div id="shelf-{c}" class="mt-24 scroll-mt-32 sm:mt-32">
 				<div use:develop class="flex flex-wrap items-baseline gap-x-6 gap-y-2">
 					<p class="font-mono text-[0.62rem] uppercase tracking-[0.24em] text-ember">{cats[c].k}</p>
 					<h3 class="font-display text-big">{cats[c].n}</h3>

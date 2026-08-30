@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <rect width="1024" height="1536" fill="#08080A"/>
+  <!-- portrait cover 620x930 centered with warm paper -->
+  <rect x="202" y="303" width="620" height="930" rx="4" fill="#F7F5F0" stroke="#2B2B2B" stroke-width="1.2" opacity="0.95"/>
+  <!-- inner grain hint (flat, no texture) -->
+  <!-- Title hierarchy -->
+  <text x="512" y="420" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="16" font-weight="400" letter-spacing="8" fill="#2B2B2B" opacity="0.55">THE SILENT KILLER</text>
+  <text x="512" y="505" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="68" font-weight="400" letter-spacing="-1.5" fill="#11110F">COLLECTION</text>
+  <text x="512" y="595" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="88" font-weight="400" fill="#C85A3C">2.0</text>
+  <rect x="302" y="630" width="420" height="1" fill="#2B2B2B" opacity="0.12"/>
+  <text x="512" y="662" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="10" font-weight="600" letter-spacing="5" fill="#11110F" opacity="0.85">FIVE HEALTH BLUEPRINTS</text>
+  <text x="512" y="682" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="7" font-weight="400" letter-spacing="2.8" fill="#2B2B2B" opacity="0.55">HEART • BLOOD PRESSURE • DIABETES • LIVER • KIDNEY</text>
+  <!-- Shield with ECG + 5 dots -->
+  <g transform="translate(512, 840)">
+    <path d="M -90 -70 L 0 -100 L 90 -70 L 90 30 Q 0 90 -90 30 Z" fill="none" stroke="#2B2B2B" stroke-width="2.2"/>
+    <path d="M -75 -60 L 0 -85 L 75 -60 L 75 20 Q 0 75 -75 20 Z" fill="none" stroke="#2B2B2B" stroke-width="1" opacity="0.6"/>
+    <polyline points="-110,5 -55,5 -40,15 -28,-18 -10,35 12,-30 28,8 45,0 110,0" fill="none" stroke="#C85A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 5 dots -->
+    <circle cx="-95" cy="-35" r="6" fill="#C85A3C"/>
+    <circle cx="95" cy="-35" r="6" fill="#C85A3C"/>
+    <circle cx="-95" cy="45" r="6" fill="#C85A3C"/>
+    <circle cx="95" cy="45" r="6" fill="#C85A3C"/>
+    <circle cx="0" cy="-115" r="6" fill="#C85A3C"/>
+  </g>
+  <!-- Whole body reset pill -->
+  <rect x="340" y="1020" width="344" height="44" rx="22" fill="#11110F"/>
+  <text x="512" y="1038" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="9" font-weight="600" letter-spacing="3" fill="#F7F5F0">WHOLE BODY RESET</text>
+  <text x="512" y="1052" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="7" font-weight="400" letter-spacing="3" fill="#F7F5F0" opacity="0.7">30-DAY PLAN</text>
+  <!-- author -->
+  <text x="512" y="1145" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="9" font-weight="500" letter-spacing="4.5" fill="#2B2B2B" opacity="0.8">MIKE I. KEKONG</text>
+  <!-- hairline border indicator -->
+  <rect x="218" y="318" width="588" height="900" rx="4" fill="none" stroke="#2B2B2B" stroke-width="0.5" opacity="0.08"/>
+</svg>

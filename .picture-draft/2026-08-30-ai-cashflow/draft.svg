@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <rect width="1024" height="1536" fill="#08080A"/>
+  <!-- subtle radial orb behind center -->
+  <circle cx="512" cy="680" r="280" fill="#5E6AD2" opacity="0.08"/>
+  <circle cx="512" cy="680" r="180" fill="#5E6AD2" opacity="0.05"/>
+  <!-- hairline border inset 10mm ~ 48px at 8% -->
+  <rect x="48" y="48" width="928" height="1440" rx="12" fill="none" stroke="#F7F5F0" stroke-width="2" opacity="0.08"/>
+  <rect x="56" y="56" width="912" height="1424" rx="10" fill="none" stroke="#F7F5F0" stroke-width="1" opacity="0.12"/>
+  <!-- top label -->
+  <text x="512" y="170" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="8" fill="#F7F5F0" opacity="0.55">A I</text>
+  <!-- central circular spark -->
+  <g transform="translate(512, 640)">
+    <!-- outer ring -->
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#F7F5F0" stroke-width="1.8" opacity="0.9"/>
+    <!-- inner dot network - abstract nodes -->
+    <circle cx="0" cy="-62" r="4" fill="#5E6AD2"/>
+    <circle cx="54" cy="-31" r="4" fill="#5E6AD2"/>
+    <circle cx="54" cy="31" r="4" fill="#5E6AD2"/>
+    <circle cx="0" cy="62" r="4" fill="#5E6AD2"/>
+    <circle cx="-54" cy="31" r="4" fill="#5E6AD2"/>
+    <circle cx="-54" cy="-31" r="4" fill="#5E6AD2"/>
+    <!-- connections -->
+    <path d="M 0 -62 L 54 -31 L 54 31 L 0 62 L -54 31 L -54 -31 Z" fill="none" stroke="#5E6AD2" stroke-width="1.1" opacity="0.35" stroke-dasharray="3 4"/>
+    <circle cx="28" cy="-48" r="2.2" fill="#F7F5F0" opacity="0.6"/>
+    <circle cx="-28" cy="48" r="2.2" fill="#F7F5F0" opacity="0.6"/>
+    <circle cx="62" cy="0" r="2.2" fill="#F7F5F0" opacity="0.6"/>
+    <circle cx="-62" cy="0" r="2.2" fill="#F7F5F0" opacity="0.6"/>
+    <!-- central $ geometric -->
+    <text x="0" y="38" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="88" font-weight="300" fill="#F7F5F0" opacity="0.95">$</text>
+    <!-- star spark cross -->
+    <path d="M 0 -95 L 8 -15 L 95 0 L 8 15 L 0 95 L -8 15 L -95 0 L -8 -15 Z" fill="none" stroke="#5E6AD2" stroke-width="1.2" opacity="0.18"/>
+  </g>
+  <!-- title CASHFLOW -->
+  <text x="512" y="945" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="132" font-weight="400" letter-spacing="-3" fill="#D9C6A8">CASHFLOW</text>
+  <!-- BLUEPRINT -->
+  <text x="512" y="1035" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="42" font-weight="300" letter-spacing="18" fill="#F7F5F0" opacity="0.85">BLUEPRINT</text>
+  <!-- hairline rule -->
+  <rect x="362" y="1070" width="300" height="1" fill="#F7F5F0" opacity="0.12"/>
+  <!-- subtitle -->
+  <text x="512" y="1115" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="1.2" fill="#F7F5F0" opacity="0.62">Turning free AI tools into daily income</text>
+  <!-- bottom author -->
+  <text x="512" y="1420" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="5" fill="#F7F5F0" opacity="0.85">MIKE I. KEKONG</text>
+  <text x="512" y="1445" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" letter-spacing="3" fill="#F7F5F0" opacity="0.35">AUTHOR &amp; CREATOR</text>
+</svg>

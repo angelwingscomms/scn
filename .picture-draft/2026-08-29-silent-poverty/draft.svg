@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <rect width="1024" height="1536" fill="#08090c"/>
+  <rect x="88" y="0" width="8" height="1536" fill="#e6a45e"/>
+  <ellipse cx="92" cy="1448" rx="36" ry="12" fill="#e6a45e"/>
+  <text x="176" y="680" font-family="Noto Serif" font-size="128" fill="#e9e4da">Silent</text>
+  <text x="176" y="830" font-family="Noto Serif" font-size="128" fill="#e9e4da">Poverty</text>
+  <text x="180" y="920" font-family="Noto Serif" font-size="20" fill="#7b818a" letter-spacing="5">MICHAEL KEKONG</text>
+</svg>

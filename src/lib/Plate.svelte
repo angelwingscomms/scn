@@ -25,6 +25,7 @@
 			{b.p} pages · pdf
 		</p>
 		<h3 class="mt-2.5 font-display text-2xl sm:text-[1.7rem]">{b.t}</h3>
+		<p class="mt-2 font-mono text-[0.6rem] leading-relaxed text-lume/90">{b.h}</p>
 		<p class="mt-2.5 max-w-[40ch] text-sm leading-relaxed text-ash">{b.s}</p>
 	</a>
 	<div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <rect width="1024" height="1536" fill="#0B0F14"/>
+  <!-- portrait cover 620x930 -->
+  <rect x="202" y="303" width="620" height="930" rx="4" fill="#F7F5F0" stroke="#1A2B4A" stroke-width="2.2" opacity="0.95"/>
+  <!-- hairline inner inset 10mm ~ 38px -->
+  <rect x="232" y="333" width="560" height="870" rx="6" fill="none" stroke="#1A2B4A" stroke-width="1.1" opacity="0.08"/>
+  <!-- grain hint via tiny pattern rect -->
+  <rect x="202" y="303" width="620" height="930" rx="4" fill="#000" opacity="0.015"/>
+  <!-- radial orb subtle behind title -->
+  <ellipse cx="512" cy="540" rx="220" ry="180" fill="#D9762C" opacity="0.06"/>
+  <!-- top label FROM PANIC -->
+  <text x="512" y="398" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="5.2" fill="#1A2B4A" opacity="0.62">FROM PANIC</text>
+  <!-- huge 300+ serif -->
+  <text x="512" y="545" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="172" font-weight="400" letter-spacing="-5" fill="#D9762C">300+</text>
+  <rect x="332" y="568" width="360" height="1.2" fill="#1A2B4A" opacity="0.12"/>
+  <text x="512" y="602" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="4.5" fill="#1A2B4A">TO CALM SYSTEM</text>
+  <text x="512" y="626" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" letter-spacing="1.6" fill="#1A2B4A" opacity="0.55">THE FOCUSED PLAN TO TURN FEAR INTO SCORE</text>
+  <!-- center icon scribble -> stair arrow -->
+  <g transform="translate(512, 780)">
+    <!-- chaotic scribble -->
+    <path d="M -115 -18 C -96 -36 -78 8 -58 -12 C -38 -28 -18 16 2 -6" fill="none" stroke="#1A2B4A" stroke-width="3.0" stroke-linecap="round" opacity="0.95"/>
+    <path d="M -68 12 C -48 -6 -28 20 -8 4" fill="none" stroke="#1A2B4A" stroke-width="2.1" stroke-linecap="round" opacity="0.45"/>
+    <!-- stairs -->
+    <rect x="22" y="36" width="52" height="11" rx="1.5" fill="none" stroke="#D9762C" stroke-width="3.2"/>
+    <rect x="42" y="16" width="52" height="11" rx="1.5" fill="none" stroke="#D9762C" stroke-width="3.2"/>
+    <rect x="62" y="-4" width="52" height="11" rx="1.5" fill="none" stroke="#D9762C" stroke-width="3.2"/>
+    <path d="M 62 -24 L 118 -24 L 100 -42 M 118 -24 L 100 -6" fill="none" stroke="#D9762C" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 2 -6 C 18 8 26 24 32 31" fill="none" stroke="#1A2B4A" stroke-width="2.8" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <!-- bottom pill -->
+  <rect x="292" y="1028" width="440" height="30" rx="15" fill="#1A2B4A"/>
+  <text x="512" y="1047" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" fill="#F7F5F0">JAMB 2026 / 2027 • SYLLABUS ALIGNED</text>
+  <!-- footer MIKE I. KEKONG 8pt tracked 0.2em -->
+  <text x="512" y="1122" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2.8" fill="#1A2B4A" opacity="0.92">MIKE I. KEKONG</text>
+  <text x="512" y="1140" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="7.2" font-weight="400" letter-spacing="2.4" fill="#7A8694">EXAMS • STRATEGY • CALM</text>
+</svg>

@@ -39,12 +39,18 @@
 		</div>
 		<div use:develop class="mt-14 grid gap-6 lg:grid-cols-2">
 			{#each bundles as u, n (u.i)}
+				{@const full = list_price(u)}
+				{@const save = full - u.a}
+				{@const pct = full ? Math.round((save / full) * 100) : 0}
 				<div
-					class="flex flex-col justify-between rounded-[2px] border border-plate-3 bg-plate-2 p-8 sm:p-10"
+					class="flex flex-col justify-between rounded-[2px] p-8 sm:p-10 {u.i === 'bundle-all' ? 'border border-ember/40 bg-ember/10' : 'border border-plate-3 bg-plate-2'}"
 					style="--i:{n}"
 				>
 					<div>
-						<h3 class="font-display text-big">{u.t}</h3>
+						{#if u.i === 'bundle-all'}
+							<p class="inline-block rounded-full bg-ember px-3 py-1 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-plate">most picked · save {naira(save)} ({pct}%)</p>
+						{/if}
+						<h3 class="font-display text-big" class:mt-3={u.i === 'bundle-all'}>{u.t}</h3>
 						<p class="mt-3 max-w-[42ch] text-sm leading-relaxed text-ash">{u.s}</p>
 						<ul class="mt-7 space-y-2">
 							{#each u.m as i (i)}
@@ -57,8 +63,11 @@
 					<div class="mt-10 flex flex-wrap items-baseline gap-x-4 gap-y-2">
 						<p class="font-display text-3xl text-ember">{naira(u.a)}</p>
 						<p class="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ash line-through">
-							{naira(list_price(u))}
+							{naira(full)}
 						</p>
+						{#if save > 0}
+							<p class="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ember">save {naira(save)} · {pct}% off</p>
+						{/if}
 						<button
 							type="button"
 							onclick={() => open_buy(u.i)}

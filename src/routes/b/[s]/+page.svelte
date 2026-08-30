@@ -15,7 +15,12 @@
 	<meta name="description" content={b.s} />
 	<meta property="og:title" content={b.t} />
 	<meta property="og:description" content={b.s} />
-	<meta property="og:image" content="/covers/{b.i}.webp" />
+	<meta property="og:image" content="https://kekongknowledge.apexlinks.org/covers/{b.i}.webp" />
+	<meta property="og:image:width" content="900" />
+	<meta property="og:image:height" content="1350" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={b.t} />
+	<meta name="twitter:description" content={b.s} />
 	<link rel="canonical" href="https://kekongknowledge.apexlinks.org/b/{b.i}" />
 </svelte:head>
 
@@ -47,6 +52,13 @@
 
 			<h1 class="mt-8 max-w-[18ch] font-display text-huge">{b.t}</h1>
 			<p class="mt-6 max-w-[46ch] text-lg leading-relaxed text-bone">{b.s}</p>
+
+			<div class="mt-8 flex flex-wrap items-center gap-4 rounded-[2px] border border-ember/20 bg-ember/10 px-5 py-4">
+				<p class="font-display text-2xl text-ember">{naira(b.a)}</p>
+				<p class="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-ash">{b.p} pages · pdf · instant</p>
+				<button type="button" onclick={() => open_buy(b.i)} class="ml-auto rounded-[2px] bg-ember px-6 py-3 font-mono text-[0.64rem] uppercase tracking-[0.18em] text-plate transition-opacity hover:opacity-85">develop — {naira(b.a)}</button>
+			</div>
+			<p class="mt-3 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-ash/80">secured by paystack · card · transfer · ussd · opay · palmpay</p>
 
 			<div class="rule mt-12"></div>
 
@@ -90,6 +102,13 @@
 			</div>
 		</div>
 	</div>
+
+<div class="fixed inset-x-0 bottom-0 z-40 border-t border-plate-3 bg-plate/95 backdrop-blur-md px-5 py-3 sm:hidden">
+	<div class="flex items-center gap-3">
+		<p class="font-display text-xl text-ember">{naira(b.a)}</p>
+		<button type="button" onclick={() => open_buy(b.i)} class="ml-auto rounded-[2px] bg-ember px-5 py-2.5 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-plate">develop — {naira(b.a)}</button>
+	</div>
+</div>
 
 	{#if rest.length}
 		<div class="mx-auto mt-40 max-w-[88rem]">

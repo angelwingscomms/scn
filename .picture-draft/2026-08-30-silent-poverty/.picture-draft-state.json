@@ -1,0 +1,20 @@
+{
+  "calls": 3,
+  "history": [
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-silent-poverty/output-01.png",
+      "ts": 1788046970
+    },
+    {
+      "mode": "edit",
+      "out": ".picture-draft/2026-08-30-silent-poverty/output-02.png",
+      "ts": 1788047007
+    },
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-silent-poverty/output-01.png",
+      "ts": 1788096745
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "calls": 2,
+  "history": [
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-jamb/output-01.png",
+      "ts": 1788047960
+    },
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-jamb/output-01.png",
+      "ts": 1788097013
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<rect width="1024" height="1536" fill="#070A14"/>
+<!-- cover 620x930 centered -->
+<rect x="202" y="303" width="620" height="930" rx="6" fill="#0A1020" stroke="#E8E6E1" stroke-opacity="0.08" stroke-width="1.5"/>
+<!-- inset hairline 10mm approx 38px inset -->
+<rect x="240" y="341" width="544" height="854" rx="4" fill="none" stroke="#E8E6E1" stroke-opacity="0.08" stroke-width="1"/>
+<!-- top label -->
+<text x="512" y="395" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="11" font-weight="500" letter-spacing="5" fill="#E8E6E1" opacity="0.5">THE BLUEPRINT</text>
+<!-- title JAMB -->
+<text x="512" y="500" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="88" font-weight="400" letter-spacing="-2" fill="#F7F5F0">JAMB</text>
+<text x="512" y="600" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="88" font-weight="400" letter-spacing="-2" fill="#F7F5F0">MASTERY</text>
+<text x="512" y="655" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="12" font-weight="500" letter-spacing="6" fill="#D9A85C">BLUEPRINT</text>
+<!-- hairline -->
+<rect x="380" y="680" width="264" height="1" fill="#E8E6E1" opacity="0.12"/>
+<!-- subtitle -->
+<text x="512" y="710" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="9" font-weight="400" letter-spacing="1.2" fill="#F7F5F0" opacity="0.45">2026 / 2027 SYLLABUS • PAST QUESTIONS → FREQUENCY → PRIORITY</text>
+<!-- icon: exam paper with vertical frequency bars (portrait) -->
+<g transform="translate(512, 880)">
+  <rect x="-110" y="-85" width="220" height="165" rx="8" fill="#F7F5F0" />
+  <rect x="-110" y="-85" width="220" height="18" rx="8" fill="#E8E6E1"/>
+  <rect x="-100" y="-78" width="60" height="4" rx="2" fill="#0A1020" opacity="0.15"/>
+  <rect x="-100" y="-62" width="190" height="1.5" fill="#0A1020" opacity="0.06"/>
+  <rect x="-100" y="-48" width="170" height="1.5" fill="#0A1020" opacity="0.06"/>
+  <rect x="-100" y="-34" width="180" height="1.5" fill="#0A1020" opacity="0.06"/>
+  <!-- vertical bars -->
+  <rect x="-80" y="10" width="16" height="35" rx="2" fill="#0A1020" opacity="0.12"/>
+  <rect x="-55" y="0" width="16" height="45" rx="2" fill="#0A1020" opacity="0.18"/>
+  <rect x="-30" y="-10" width="16" height="55" rx="2" fill="#D9A85C"/>
+  <rect x="-5" y="5" width="16" height="40" rx="2" fill="#0A1020" opacity="0.14"/>
+  <rect x="20" y="15" width="16" height="30" rx="2" fill="#0A1020" opacity="0.10"/>
+  <rect x="45" y="-5" width="16" height="50" rx="2" fill="#0A1020" opacity="0.16"/>
+  <rect x="70" y="18" width="16" height="27" rx="2" fill="#0A1020" opacity="0.08"/>
+  <!-- amber highlight dot -->
+  <circle cx="-22" cy="-14" r="3" fill="#D9A85C"/>
+</g>
+<!-- small 300+ hint -->
+<text x="512" y="1075" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="18" font-weight="400" fill="#D9A85C" opacity="0.95">300+ <tspan fill="#F7F5F0" opacity="0.45" font-size="9" letter-spacing="2" baseline-shift="0">SYSTEM</tspan></text>
+<!-- footer -->
+<text x="512" y="1145" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="8" font-weight="600" letter-spacing="3.5" fill="#F7F5F0" opacity="0.85">MIKE I. KEKONG</text>
+<text x="512" y="1162" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="7" font-weight="400" letter-spacing="2" fill="#E8E6E1" opacity="0.35">EXAMS • STRATEGY • CALM</text>
+</svg>

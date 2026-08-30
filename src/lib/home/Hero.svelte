@@ -44,7 +44,7 @@
 
 	<div class="mx-auto w-full max-w-[88rem]">
 		<p class="font-mono text-[0.6rem] uppercase tracking-[0.24em] text-ash sm:text-[0.66rem]">
-			michael kekong · eight blueprints · pdf · instant
+			michael kekong · nine blueprints · pdf · instant
 		</p>
 
 		<h1 class="mt-7 max-w-[15ch] font-display text-mega">
@@ -52,7 +52,7 @@
 		</h1>
 
 		<p class="mt-9 max-w-[46ch] text-base leading-relaxed text-ash sm:text-lg">
-			eight blueprints on the body, the money and the exams. nothing here is a secret. it is just
+			nine blueprints on the body, the money and the exams. nothing here is a secret. it is just
 			unlit — and most people never bring a light.
 		</p>
 
@@ -62,7 +62,7 @@
 				onclick={() => open_buy(all.i)}
 				class="rounded-[2px] bg-ember px-7 py-3.5 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-plate transition-opacity duration-200 hover:opacity-85"
 			>
-				develop all eight — {naira(all.a)}
+				develop all nine — {naira(all.a)}
 			</button>
 			<a
 				href="#library"

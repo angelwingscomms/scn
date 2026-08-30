@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <rect width="1024" height="1536" fill="#08080A"/>
+  <!-- radial glow behind title -->
+  <ellipse cx="512" cy="520" rx="380" ry="260" fill="#1A1A1E" opacity="0.35"/>
+  <!-- cover area centered -->
+  <rect x="72" y="52" width="880" height="1432" rx="6" fill="#08080A" stroke="#C9A86A" stroke-width="1.2" opacity="0.18"/>
+  <rect x="82" y="62" width="860" height="1412" rx="4" fill="none" stroke="#C9A86A" stroke-width="0.9" opacity="0.08"/>
+  <!-- top small -->
+  <text x="512" y="190" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="8" fill="#F7F5F0" opacity="0.55">THE</text>
+  <!-- title -->
+  <text x="512" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="138" font-weight="400" letter-spacing="-2" fill="#E8D9B0">SILENT</text>
+  <text x="512" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="138" font-weight="400" letter-spacing="-3" fill="#E8D9B0">KILLER</text>
+  <text x="512" y="750" text-anchor="middle" font-family="Georgia, serif" font-size="142" font-weight="400" letter-spacing="-3" fill="#F7F5F0">RESET</text>
+  <!-- thin rule -->
+  <rect x="342" y="790" width="340" height="1" fill="#C9A86A" opacity="0.45"/>
+  <text x="512" y="830" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="3.2" fill="#F7F5F0" opacity="0.75">30-DAY PROTECTION FOR HEART • BRAIN • LUNGS</text>
+  <!-- ECG shield icon -->
+  <g transform="translate(512, 1020)">
+    <!-- shield outline -->
+    <path d="M -110 -80 L -110 30 C -110 70 -60 120 0 145 C 60 120 110 70 110 30 L 110 -80 L 0 -105 Z" fill="none" stroke="#F7F5F0" stroke-width="2.3" opacity="0.95"/>
+    <path d="M -95 -68 L -95 28 C -95 62 -52 106 0 130 C 52 106 95 62 95 28 L 95 -68 L 0 -92 Z" fill="none" stroke="#F7F5F0" stroke-width="1.1" opacity="0.35"/>
+    <!-- ECG line -->
+    <path d="M -150 20 L -55 20 L -35 -5 L -15 55 L 5 -60 L 25 35 L 45 0 L 150 0" fill="none" stroke="#C9A86A" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- footer -->
+  <rect x="342" y="1310" width="340" height="1" fill="#C9A86A" opacity="0.25"/>
+  <text x="512" y="1355" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="6" fill="#C9A86A">MIKE I. KEKONG</text>
+  <text x="512" y="1385" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" letter-spacing="3.5" fill="#F7F5F0" opacity="0.45">PREVENTION • SYSTEM • CALM</text>
+</svg>

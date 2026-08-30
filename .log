@@ -1,0 +1,15 @@
+$ vite dev
+2:22:34 PM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v8.2.0  ready in 5434 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+Using secrets defined in .env
+Using secrets defined in .env
+*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:844: failed: SENTRY_DO SQLite failed; NOSENTRY database is locked: SQLITE_BUSY (extended: SQLITE_BUSY_RECOVERY)
+stack: /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@33af68b /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2010925 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@206e2bc /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@206dc76 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@202b09c /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@202aaf2 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fe0a32 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@20680bf /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@206b415 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fb1339 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5432855 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5432d78 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@543082e /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@543062e /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f98d17 /usr/lib/libc.so.6@2abfb /usr/lib/libc.so.6@2acb4 /home/ed/i/scn/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260801.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f98024
+
+[1;31m[404] GET /favicon.ico[0m
+2:22:41 PM [vite] (client) dependency optimized: @paystack/inline-js

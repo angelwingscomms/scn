@@ -7,6 +7,7 @@
 	let email = $state('');
 	let busy = $state(false);
 	let err = $state('');
+	let fallback = $state('');
 
 	const picked = $derived(item(buy.i));
 
@@ -29,7 +30,7 @@
 		}
 		busy = true;
 		err = '';
-		let fallback = '';
+		fallback = '';
 		try {
 			const res = await fetch('/api/checkout', {
 				method: 'POST',
@@ -49,6 +50,7 @@
 				},
 				onCancel: () => {
 					clearTimeout(bail);
+					err = 'payment closed — try again when ready';
 					busy = false;
 				},
 				onError: () => {
@@ -78,7 +80,7 @@
 			<p class="mt-3 font-mono text-sm text-ember">{naira(picked.a)}</p>
 
 			<label class="mt-8 block font-mono text-[0.6rem] uppercase tracking-[0.24em] text-ash" for="buyer">
-				where should we develop it
+				email for receipt
 			</label>
 			<input
 				id="buyer"
@@ -87,10 +89,11 @@
 				autocomplete="email"
 				placeholder="your@email.com"
 				bind:value={email}
-				class="mt-3 w-full rounded-[2px] border border-plate-3 bg-plate px-4 py-3 text-base text-bone outline-none transition-colors duration-200 placeholder:text-ash/50 focus:border-lume"
+				disabled={busy}
+				class="mt-3 w-full rounded-[2px] border border-plate-3 bg-plate px-4 py-3 text-base text-bone outline-none transition-colors duration-200 placeholder:text-ash/50 focus:border-lume disabled:opacity-60"
 			/>
 			<p class="mt-3 text-xs leading-relaxed text-ash">
-				your receipt and downloads open on the next page. nothing is emailed, nothing is stored.
+				your download opens on the next page — we also keep this email for your receipt and recovery.
 			</p>
 
 			{#if err}
@@ -102,6 +105,7 @@
 					type="button"
 					onclick={shut}
 					class="font-mono text-[0.6rem] uppercase tracking-[0.22em] text-ash transition-colors duration-200 hover:text-bone"
+					disabled={busy}
 				>
 					not now
 				</button>
@@ -109,13 +113,17 @@
 					type="button"
 					onclick={pay}
 					disabled={busy}
-					class="rounded-[2px] bg-ember px-6 py-3 font-mono text-[0.66rem] uppercase tracking-[0.2em] text-plate transition-opacity duration-200 hover:opacity-85 disabled:opacity-50"
+					class="flex items-center gap-2 rounded-[2px] bg-ember px-6 py-3 font-mono text-[0.66rem] uppercase tracking-[0.2em] text-plate transition-opacity duration-200 hover:opacity-85 disabled:opacity-50"
 				>
+					{#if busy}<span class="inline-block h-3 w-3 animate-spin rounded-full border-2 border-plate/30 border-t-plate"></span>{/if}
 					{busy ? 'opening paystack…' : 'pay ' + naira(picked.a)}
 				</button>
 			</div>
-			<p class="mt-5 font-mono text-[0.58rem] uppercase tracking-[0.2em] text-ash">
-				card · transfer · ussd · opay · palmpay — ctrl+enter to pay
+			{#if busy}
+				<p class="mt-3 text-xs text-ash">opening paystack… <button type="button" onclick={() => fallback && (location.href = fallback)} class="text-lume underline">not opening? tap here</button></p>
+			{/if}
+			<p class="mt-5 flex items-center gap-2 font-mono text-[0.58rem] uppercase tracking-[0.2em] text-ash">
+				<span>🔒</span> secured by paystack · card · transfer · ussd · opay · palmpay — ctrl+enter to pay
 			</p>
 		</div>
 	{/if}

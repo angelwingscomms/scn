@@ -1,0 +1,15 @@
+{
+  "calls": 2,
+  "history": [
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-killer-reset/output-01.png",
+      "ts": 1788047712
+    },
+    {
+      "mode": "generate",
+      "out": ".picture-draft/2026-08-30-killer-reset/output-01.png",
+      "ts": 1788096756
+    }
+  ]
+}
