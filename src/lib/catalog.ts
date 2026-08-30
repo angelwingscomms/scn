@@ -175,6 +175,25 @@ export const books: Book[] = [
 		w: 'anyone sitting jamb in 2026 or 2027, and the parents paying for it.'
 	},
 	{
+		i: 'panic-300',
+		t: 'From Panic to 300+',
+		s: 'from panic to 300+ — the calm system for turning jamb fear into a focused, high score',
+		c: 'x',
+		p: 36,
+		a: 200000,
+		h: 'panic is not a lack of intelligence. it is a lack of system.',
+		d: 'the missing piece between jamb mastery and the exam hall. it teaches how to stop spiralling, how to turn the syllabus into a daily plan you can actually finish, and how to walk into the hall ready instead of rattled — with the same three-step method: past questions, frequency, priority, now taught as a calm 30-day execution.',
+		l: [
+			'the panic loop and how to break it',
+			'turning the full 2026/2027 syllabus into a daily plan',
+			'past questions → frequency → priority, taught calmly',
+			'the 30-day execution: foundation, practice, simulation',
+			'the psychology of scoring 300+ without burning out',
+			'what to ignore, what to double down on'
+		],
+		w: 'anyone who freezes at the word jamb and wants 300+ without cramming.'
+	},
+	{
 		i: 'waec',
 		t: 'WAEC A+ Blueprint',
 		s: 'a 90-day toolkit for excellent grades without stress, confusion or last-minute panic',
@@ -201,8 +220,8 @@ export const bundles: Bundle[] = [
 	{
 		i: 'bundle-all',
 		t: 'The Whole Library',
-		s: 'all eight blueprints — the body, the money and the exams — at half of what they cost apart',
-		a: 1150000,
+		s: 'all nine blueprints — the body, the money and the exams — at half of what they cost apart',
+		a: 1350000,
 		m: [
 			'killer-collection',
 			'killer-reset',
@@ -211,7 +230,8 @@ export const bundles: Bundle[] = [
 			'silent-poverty',
 			'digital-skill',
 			'jamb',
-			'waec'
+			'waec',
+			'panic-300'
 		]
 	},
 	{
@@ -231,9 +251,9 @@ export const bundles: Bundle[] = [
 	{
 		i: 'bundle-exams',
 		t: 'The Exams',
-		s: 'jamb and waec, the syllabus and the system',
-		a: 300000,
-		m: ['jamb', 'waec']
+		s: 'jamb and waec and panic to 300+, the syllabus and the system',
+		a: 500000,
+		m: ['jamb', 'waec', 'panic-300']
 	}
 ];
 
