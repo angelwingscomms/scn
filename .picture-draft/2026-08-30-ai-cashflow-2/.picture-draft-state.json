@@ -1,5 +1,5 @@
 {
-  "calls": 2,
+  "calls": 3,
   "history": [
     {
       "mode": "generate",
@@ -10,6 +10,11 @@
       "mode": "generate",
       "out": ".picture-draft/2026-08-30-ai-cashflow-2/output-01.png",
       "ts": 1788097009
+    },
+    {
+      "mode": "edit",
+      "out": ".picture-draft/2026-08-30-ai-cashflow-2/output-02.png",
+      "ts": 1788098350
     }
   ]
 }
