@@ -10,14 +10,14 @@
 		<div class="relative overflow-hidden rounded-[2px] border border-plate-3 bg-plate-2">
 			<img
 				src="/covers/{b.i}-s.webp"
-				srcset="/covers/{b.i}-s.webp 750w, /covers/{b.i}.webp 1100w"
+				srcset="/covers/{b.i}-s.webp 600w, /covers/{b.i}.webp 900w"
 				sizes="(min-width: 1280px) 20rem, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
-				alt="cover of {b.t} by Michael Kekong"
-				width="1100"
-				height="1100"
+				alt="cover of {b.t} by Mike I. Kekong"
+				width="900"
+				height="1350"
 				loading="lazy"
 				decoding="async"
-				class="plate-img aspect-square w-full object-cover"
+				class="plate-img aspect-[2/3] w-full object-cover"
 			/>
 			<div class="scan" aria-hidden="true"></div>
 		</div>

@@ -25,10 +25,10 @@
 			<div class="relative overflow-hidden rounded-[2px] border border-plate-3 bg-plate-2">
 				<img
 					src="/covers/{b.i}.webp"
-					alt="cover of {b.t} by {author.n}"
-					width="1100"
-					height="1100"
-					class="plate-img aspect-square w-full object-cover"
+					alt="cover of {b.t} by Mike I. Kekong"
+					width="900"
+					height="1350"
+					class="plate-img aspect-[2/3] w-full object-cover"
 				/>
 				<div class="scan" aria-hidden="true"></div>
 			</div>
