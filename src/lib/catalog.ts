@@ -24,7 +24,8 @@ export type Bundle = {
 export const author = {
 	n: 'Michael Kekong',
 	w: '2348164153030',
-	d: '0816 415 3030'
+	d: '0816 415 3030',
+	g: 'https://www.instagram.com/michael.kekong'
 };
 
 export const cats: Record<Cat, { k: string; n: string; s: string }> = {

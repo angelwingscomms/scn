@@ -34,7 +34,7 @@
 			onclick={() => open_buy(b.i)}
 			class="rounded-[2px] border border-ember/60 px-5 py-2.5 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-ember transition-colors duration-200 hover:bg-ember hover:text-plate"
 		>
-			develop — {naira(b.a)}
+			buy — {naira(b.a)}
 		</button>
 		<a
 			href="/b/{b.i}"

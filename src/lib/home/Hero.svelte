@@ -62,7 +62,7 @@
 				onclick={() => open_buy(all.i)}
 				class="rounded-[2px] bg-ember px-7 py-3.5 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-plate transition-opacity duration-200 hover:opacity-85"
 			>
-				develop all nine — {naira(all.a)}
+				buy all nine — {naira(all.a)}
 			</button>
 			<a
 				href="#library"

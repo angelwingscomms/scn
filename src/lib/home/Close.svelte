@@ -73,7 +73,7 @@
 							onclick={() => open_buy(u.i)}
 							class="ml-auto rounded-[2px] bg-ember px-6 py-3 font-mono text-[0.64rem] uppercase tracking-[0.18em] text-plate transition-opacity duration-200 hover:opacity-85"
 						>
-							develop
+							buy — {naira(u.a)}
 						</button>
 					</div>
 				</div>

@@ -19,8 +19,6 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="grain" aria-hidden="true"></div>
-
 <header class="fixed inset-x-0 top-0 z-50 border-b border-plate-3/60 bg-plate/75 backdrop-blur-md">
 	<nav class="mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-5 py-3.5 sm:px-8">
 		<a href="/" class="font-display text-xl leading-none text-bone sm:text-2xl">
@@ -72,6 +70,9 @@
 					rel="noopener"
 					target="_blank">whatsapp {author.d}</a
 				>
+			</p>
+			<p class="mt-3">
+				<a class="transition-colors duration-200 hover:text-bone" href={author.g} rel="noopener" target="_blank">instagram @michael.kekong</a>
 			</p>
 		</div>
 		<div class="text-xs leading-relaxed text-ash/80">
