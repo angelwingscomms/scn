@@ -16,6 +16,10 @@
 		{
 			"pattern": "kekongknowledge.apexlinks.org",
 			"custom_domain": true
+		},
+		{
+			"pattern": "kekong.me",
+			"custom_domain": true
 		}
 	],
 	"r2_buckets": [
