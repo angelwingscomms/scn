@@ -12,12 +12,12 @@ import {
 } from './catalog';
 
 describe('books', () => {
-	it('holds exactly the eight titles', () => {
-		expect(books).toHaveLength(8);
+	it('holds exactly the nine titles', () => {
+		expect(books).toHaveLength(9);
 	});
 
 	it('has unique slugs', () => {
-		expect(new Set(books.map((b) => b.i)).size).toBe(8);
+		expect(new Set(books.map((b) => b.i)).size).toBe(9);
 	});
 
 	it('carries every field the pages render', () => {
@@ -38,11 +38,31 @@ describe('books', () => {
 		for (const b of books) {
 			expect(b.a, `${b.i} price`).toBeGreaterThan(0);
 			expect(b.a % 100, `${b.i} is kobo`).toBe(0);
+			if (b.o) {
+				expect(b.o % 100, `${b.i} compare-at is kobo`).toBe(0);
+				expect(b.o, `${b.i} compare-at`).toBeGreaterThan(b.a);
+			}
+		}
+	});
+
+	it('matches the current sale sheet', () => {
+		const sale: Record<string, [number, number | undefined]> = {
+			'panic-300': [250000, 400000],
+			waec: [200000, 350000],
+			jamb: [200000, 350000],
+			'killer-collection': [450000, 600000],
+			'killer-reset': [300000, 500000],
+			'ai-cashflow-2': [450000, 600000],
+			'ai-cashflow': [300000, 500000]
+		};
+		for (const [i, [a, o]] of Object.entries(sale)) {
+			expect(book(i)?.a, i).toBe(a);
+			expect(book(i)?.o, i).toBe(o);
 		}
 	});
 
 	it('covers all three shelves', () => {
-		expect(by_cat('b').length + by_cat('m').length + by_cat('x').length).toBe(8);
+		expect(by_cat('b').length + by_cat('m').length + by_cat('x').length).toBe(9);
 		expect(by_cat('b').length).toBeGreaterThan(0);
 		expect(by_cat('m').length).toBeGreaterThan(0);
 		expect(by_cat('x').length).toBeGreaterThan(0);

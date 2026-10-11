@@ -36,6 +36,9 @@
 		>
 			buy — {naira(b.a)}
 		</button>
+		{#if b.o}
+			<span class="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ash line-through">{naira(b.o)}</span>
+		{/if}
 		<a
 			href="/b/{b.i}"
 			class="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-ash transition-colors duration-200 hover:text-lume"

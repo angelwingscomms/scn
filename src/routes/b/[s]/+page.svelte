@@ -55,6 +55,7 @@
 
 			<div class="mt-8 flex flex-wrap items-center gap-4 rounded-[2px] border border-ember/20 bg-ember/10 px-5 py-4">
 				<p class="font-display text-2xl text-ember">{naira(b.a)}</p>
+				{#if b.o}<p class="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ash line-through">{naira(b.o)}</p>{/if}
 				<p class="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-ash">{b.p} pages · pdf · instant</p>
 				<button type="button" onclick={() => open_buy(b.i)} class="ml-auto rounded-[2px] bg-ember px-6 py-3 font-mono text-[0.64rem] uppercase tracking-[0.18em] text-plate transition-opacity hover:opacity-85">buy — {naira(b.a)}</button>
 			</div>
@@ -89,6 +90,7 @@
 				class="mt-16 flex flex-wrap items-center gap-6 rounded-[2px] border border-plate-3 bg-plate-2 p-8"
 			>
 				<p class="font-display text-4xl text-ember">{naira(b.a)}</p>
+				{#if b.o}<p class="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-ash line-through">{naira(b.o)}</p>{/if}
 				<button
 					type="button"
 					onclick={() => open_buy(b.i)}
@@ -106,6 +108,7 @@
 <div class="fixed inset-x-0 bottom-0 z-40 border-t border-plate-3 bg-plate/95 backdrop-blur-md px-5 py-3 sm:hidden">
 	<div class="flex items-center gap-3">
 		<p class="font-display text-xl text-ember">{naira(b.a)}</p>
+		{#if b.o}<p class="font-mono text-[0.58rem] uppercase tracking-[0.16em] text-ash line-through">{naira(b.o)}</p>{/if}
 		<button type="button" onclick={() => open_buy(b.i)} class="ml-auto rounded-[2px] bg-ember px-5 py-2.5 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-plate">buy — {naira(b.a)}</button>
 	</div>
 </div>

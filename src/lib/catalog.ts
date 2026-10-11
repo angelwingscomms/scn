@@ -7,6 +7,7 @@ export type Book = {
 	c: Cat;
 	p: number;
 	a: number;
+	o?: number; // compare-at, kobo
 	h: string;
 	d: string;
 	l: string[];
@@ -42,6 +43,7 @@ export const books: Book[] = [
 		c: 'b',
 		p: 111,
 		a: 450000,
+		o: 600000,
 		h: 'millions feel perfectly healthy until the day a silent disease changes everything.',
 		d: 'the whole prevention series in one file. five complete blueprints, one organ at a time, each with the early warning signs people talk themselves out of, the everyday habits that cause the damage, and a four-week plan to turn it around. the bonus full-body reset runs the whole thing day by day.',
 		l: [
@@ -62,6 +64,7 @@ export const books: Book[] = [
 		c: 'b',
 		p: 33,
 		a: 300000,
+		o: 500000,
 		h: 'chronic disease is not built overnight. it is built out of small daily decisions.',
 		d: 'the shortest way in. three conditions that account for more deaths than anything else — heart disease, stroke, lower respiratory infection — explained plainly, with the warning signs your body gives months in advance and a thirty-day protection challenge you can actually finish.',
 		l: [
@@ -82,6 +85,7 @@ export const books: Book[] = [
 		c: 'm',
 		p: 86,
 		a: 300000,
+		o: 500000,
 		h: 'ai is not the business. ai is the worker. you are the business owner.',
 		d: 'most ai books explain how ai works. nobody is asking that. people are asking what they can sell this week. this one skips the history and the jargon and goes straight to income you can start with chatgpt and claude, using the free tiers, from a phone if that is what you have.',
 		l: [
@@ -100,6 +104,7 @@ export const books: Book[] = [
 		c: 'm',
 		p: 38,
 		a: 450000,
+		o: 600000,
 		h: 'the 2.0 is not more reading. it is the assets.',
 		d: 'ten parts and seven bonuses of things you use rather than things you read. the side hustles are costed and scripted, the prompts are ready to paste, the templates are ready to send, and the thirty-day challenge tells you what to do each morning.',
 		l: [
@@ -161,6 +166,7 @@ export const books: Book[] = [
 		c: 'x',
 		p: 48,
 		a: 200000,
+		o: 350000,
 		h: 'past questions repeat. frequency is a map. almost nobody reads it.',
 		d: 'the updated syllabus and the method in one file. it teaches the three-step system — past questions, then frequency, then priority — then hands you a thirty-day plan split into foundation, practice and simulation, and names the study myths that quietly cost candidates their score.',
 		l: [
@@ -181,7 +187,8 @@ export const books: Book[] = [
 		s: 'from panic to 300+ — the calm system for turning jamb fear into a focused, high score',
 		c: 'x',
 		p: 36,
-		a: 200000,
+		a: 250000,
+		o: 400000,
 		h: 'panic is not a lack of intelligence. it is a lack of system.',
 		d: 'the missing piece between jamb mastery and the exam hall. it teaches how to stop spiralling, how to turn the syllabus into a daily plan you can actually finish, and how to walk into the hall ready instead of rattled — with the same three-step method: past questions, frequency, priority, now taught as a calm 30-day execution.',
 		l: [
@@ -201,6 +208,7 @@ export const books: Book[] = [
 		c: 'x',
 		p: 42,
 		a: 200000,
+		o: 350000,
 		h: 'students do not fail waec for being unintelligent. they fail because nobody showed them how marks are awarded.',
 		d: 'most waec material tells students to read harder. this one sells the system: how examiners award marks, how to study less and remember more, how to turn a weak subject into a passable one, and a ninety-day plan that ends with a student who is ready instead of frightened.',
 		l: [

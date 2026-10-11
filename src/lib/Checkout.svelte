@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ctrl_enter } from '$lib/actions';
 	import { buy } from '$lib/buy.svelte';
-	import { item, naira } from '$lib/catalog';
+	import { book, item, naira } from '$lib/catalog';
 
 	let box: HTMLDialogElement;
 	let email = $state('');
@@ -77,7 +77,12 @@
 		<div use:ctrl_enter={pay} class="p-7 sm:p-9">
 			<p class="font-mono text-[0.6rem] uppercase tracking-[0.24em] text-ash">develop this plate</p>
 			<h2 class="mt-4 font-display text-3xl leading-tight">{picked.t}</h2>
-			<p class="mt-3 font-mono text-sm text-ember">{naira(picked.a)}</p>
+			<p class="mt-3 font-mono text-sm text-ember">
+				{naira(picked.a)}
+				{#if book(buy.i)?.o}
+					<span class="ml-3 text-ash line-through">{naira(book(buy.i)!.o!)}</span>
+				{/if}
+			</p>
 
 			<label class="mt-8 block font-mono text-[0.6rem] uppercase tracking-[0.24em] text-ash" for="buyer">
 				email for receipt
