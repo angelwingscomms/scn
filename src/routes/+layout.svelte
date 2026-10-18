@@ -3,6 +3,7 @@
 	import Checkout from '$lib/Checkout.svelte';
 	import { open_buy } from '$lib/buy.svelte';
 	import { author, bundle, naira } from '$lib/catalog';
+	import { page } from '$app/state';
 
 	let { children } = $props();
 
@@ -13,9 +14,10 @@
 	<link rel="icon" href="/favicon.svg" />
 	<meta property="og:site_name" content="Michael Kekong" />
 	<meta property="og:image" content="/og.jpg" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://kekongknowledge.apexlinks.org" />
-	<link rel="canonical" href="https://kekongknowledge.apexlinks.org" />
+	<meta property="og:type" content={page.url.pathname.startsWith('/updates/') ? 'article' : 'website'} />
+	<meta property="og:url" content="https://kekong.me{page.url.pathname}" />
+	<link rel="canonical" href="https://kekong.me{page.url.pathname}" />
+	<link rel="alternate" type="application/rss+xml" title="michael kekong · from the desk" href="/feed.xml" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
@@ -25,6 +27,8 @@
 			kekong<span class="text-lume">.</span>
 		</a>
 		<div class="flex items-center gap-5 sm:gap-8">
+			<a href="/updates" class="py-2 font-mono text-[0.62rem] tracking-widest text-ash hover:text-bone">updates</a>
+			<a href="/notifications" aria-label="notifications" class="py-2 text-lume"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" /></svg></a>
 			<a
 				href="/#library"
 				class="hidden font-mono text-[0.62rem] uppercase tracking-[0.2em] text-ash transition-colors duration-200 hover:text-bone sm:block"
@@ -42,7 +46,7 @@
 				onclick={() => open_buy(all.i)}
 				class="rounded-[2px] bg-ember px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-plate transition-opacity duration-200 hover:opacity-85 sm:border sm:border-ember/60 sm:bg-transparent sm:text-ember sm:hover:bg-ember sm:hover:text-plate"
 			>
-				all nine — {naira(all.a)}
+				<span class="sm:hidden">books</span><span class="hidden sm:inline">all nine — {naira(all.a)}</span>
 			</button>
 		</div>
 	</nav>
@@ -60,6 +64,8 @@
 			</p>
 		</div>
 		<div class="font-mono text-[0.66rem] uppercase tracking-[0.18em] text-ash">
+			<p class="mb-3"><a class="hover:text-bone" href="/updates">from the desk</a></p>
+			<p class="mb-3"><a class="hover:text-bone" href="/notifications">notifications</a></p>
 			<p><a class="transition-colors duration-200 hover:text-bone" href="/#library">the library</a></p>
 			<p class="mt-3"><a class="transition-colors duration-200 hover:text-bone" href="/#bundles">bundles</a></p>
 			<p class="mt-3"><a class="transition-colors duration-200 hover:text-bone" href="/#questions">questions</a></p>

@@ -15,6 +15,7 @@
 		"test": "npm run test:unit -- --run"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^5.20261016.1",
 		"@sveltejs/adapter-cloudflare": "^7.2.8",
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -28,6 +29,7 @@
 		"wrangler": "^4.97.0"
 	},
 	"dependencies": {
+		"@block65/webcrypto-web-push": "^2.0.0",
 		"@paystack/inline-js": "^2.24.0"
 	}
 }

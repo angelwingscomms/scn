@@ -3,5 +3,7 @@ Allow: /
 Disallow: /r
 Disallow: /d/
 Disallow: /api/
+Disallow: /admin
+Disallow: /notifications
 
-Sitemap: https://kekongknowledge.apexlinks.org/sitemap.xml
+Sitemap: https://kekong.me/sitemap.xml

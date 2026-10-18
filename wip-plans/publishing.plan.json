@@ -1,0 +1,31 @@
+{
+	"_": "Extend kekong.me in /home/ed/i/scn. Svelte 5 runes, TypeScript, pnpm, existing Tailwind tokens. Reuse F R2; all new keys under journal/ so paid PDFs remain private. No database migrations. Preserve unrelated .picture-draft and .log changes. Owner-only publishing with ADMIN_PASSWORD; fail closed if absent. Public content is escaped plain text. Browser push is opt-in and uses Workers-compatible webcrypto-web-push; no email provider or user accounts. Read existing code before edits, keep one server module per domain. No production test publications or messages. Commit task files only, push when checks pass. No deployment CLI. User update: do not write or run tests. Use typecheck and build only; no test suites, browser exercises or test publications.",
+	"content_core": {
+		"s": "Build src/lib/content.ts for shared single-letter content types and validation; src/lib/server/content.ts owns R2 reads/writes, listing, media validation and stale-edit protection. src/lib/server/auth.ts owns signed expiring HttpOnly sessions and bounded login attempts. Four kinds: text, article, video, announcement; draft/published states. Draft reads and media require owner authorization. Uploads allow MP4/WebM up to 27 MiB, signature checked; stream responses with Range support. Do not add or run tests; typecheck and compile only. No admin or reader UI yet.",
+		"d": 1,
+		"t": "test -f src/lib/server/auth.ts && test -f src/lib/server/content.ts && pnpm check"
+	},
+	"owner_dashboard": {
+		"s": "Add /admin sign-in/sign-out and dashboard using src/lib/server/auth.ts, server form actions and content owner module. Compose, save drafts, edit with ETag, preview, publish, unpublish and delete with explicit UI confirmation. Video uploader uses authenticated /api/media; associate uploads only with their owning post. Keep failed input, show progress/errors, guard unsaved navigation. No marketing redesign; use existing app.css tokens and accessible labels. No browser testing per updated user instruction.",
+		"d": 1,
+		"v": "test -f src/lib/server/content.ts",
+		"t": "test -f src/routes/admin/+page.server.ts && test -f src/routes/admin/+page.svelte && pnpm check"
+	},
+	"reader_feed": {
+		"s": "Add /updates newest-first published feed with kind filtering and pagination, /updates/[i] detail pages and authenticated draft preview. Safe escaped paragraphs, controllable video with no autoplay, share links, empty/error states and metadata. Add /notifications on-site inbox with per-device last-seen state, /feed.xml RSS, dynamic sitemap entries and per-page kekong.me canonical links. Add updates and notifications to existing navigation and homepage. Preserve ebook checkout and paid download authorization. No browser testing per updated user instruction.",
+		"d": 1,
+		"v": "test -f src/routes/admin/+page.svelte",
+		"t": "test -f src/routes/updates/+page.server.ts && test -f src/routes/notifications/+page.svelte && test -f src/routes/feed.xml/+server.ts && pnpm check && pnpm build"
+	},
+	"opt_in_push": {
+		"s": "Add opt-in browser push via /api/push, static service worker and src/lib/server/push.ts using @block65/webcrypto-web-push. Validate approved browser push endpoints and actual key sizes before R2 storage; never expose subscriptions. Device cookie controls subscription removal. Owner explicitly notifies followers only for published content; use persisted R2 delivery cursor, conditional lease, bounded batches and visible success/failure counts to avoid lost progress or overlapping broadcasts. Expired endpoints are removed, transient failures reported. Unsupported/denied browsers retain on-site inbox; explain iOS home-screen requirement. Document ADMIN_PASSWORD and VAPID setup without secrets. No tests or actual subscriber sends per updated user instruction.",
+		"d": 1,
+		"v": "test -f src/routes/notifications/+page.svelte",
+		"t": "test -f src/lib/server/push.ts && test -f static/sw.js && pnpm check && pnpm build"
+	},
+	"verification": {
+		"s": "Review the task diff for auth boundaries, private drafts and media, stale-edit protection, unsafe text, notification opt-in and unsubscribe. Do not write or run tests or exercise publication flows. Typecheck and compile only. Record credential-dependent activation accurately. Mark complete, commit only related files and push.",
+		"d": 1,
+		"t": "pnpm check && pnpm build"
+	}
+}

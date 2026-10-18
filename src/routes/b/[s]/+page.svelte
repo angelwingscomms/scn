@@ -15,13 +15,12 @@
 	<meta name="description" content={b.s} />
 	<meta property="og:title" content={b.t} />
 	<meta property="og:description" content={b.s} />
-	<meta property="og:image" content="https://kekongknowledge.apexlinks.org/covers/{b.i}.webp" />
+	<meta property="og:image" content="https://kekong.me/covers/{b.i}.webp" />
 	<meta property="og:image:width" content="900" />
 	<meta property="og:image:height" content="1350" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={b.t} />
 	<meta name="twitter:description" content={b.s} />
-	<link rel="canonical" href="https://kekongknowledge.apexlinks.org/b/{b.i}" />
 </svelte:head>
 
 <article class="px-5 pt-20 sm:px-8">

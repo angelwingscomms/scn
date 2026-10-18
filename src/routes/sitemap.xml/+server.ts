@@ -1,12 +1,14 @@
 import { books } from '$lib/catalog';
 import type { RequestHandler } from './$types';
+import { bucket } from '$lib/server/auth';
+import { list_posts } from '$lib/server/content';
 
-export const prerender = true;
+export const prerender = false;
 
-const SITE = 'https://kekongknowledge.apexlinks.org';
+const SITE = 'https://kekong.me';
 
-export const GET: RequestHandler = () => {
-	const urls = ['', ...books.map((b) => `/b/${b.i}`)]
+export const GET: RequestHandler = async (event) => {
+	const urls = ['', '/updates', ...books.map((b) => `/b/${b.i}`), ...(await list_posts(bucket(event))).map((post) => `/updates/${post.i}`)]
 		.map((p) => `<url><loc>${SITE}${p}</loc><changefreq>monthly</changefreq></url>`)
 		.join('');
 
