@@ -26,7 +26,7 @@ Followers who subscribe after a broadcast starts are excluded from that run.
 
 Set these Worker secrets before owner publishing and browser push can work:
 
-- `ADMIN_PASSWORD`: a strong password of at least 16 characters.
+- `ADMIN_PASSWORD`: a strong password of at least 10 characters.
 - `VAPID_PUBLIC_KEY`: the base64url uncompressed P-256 public point.
 - `VAPID_PRIVATE_KEY`: the base64url P-256 private scalar.
 

@@ -12,7 +12,7 @@
 <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
 	<div class="mb-10 flex flex-wrap items-end justify-between gap-5"><div><p class="mb-3 font-mono text-xs tracking-widest text-lume">owner studio</p><h1 class="text-huge">something worth sharing.</h1></div>{#if data.o}<form method="POST" action="?/logout"><button type="submit" class="min-h-11 text-sm text-ash underline">sign out</button></form>{/if}</div>
 	{#if !data.o}
-		{#if !data.r}<p class="max-w-lg border border-plate-3 bg-plate-2 p-6 text-sm leading-relaxed">publishing is ready for setup. set ADMIN_PASSWORD to a strong password of at least 16 characters in the worker secrets, then sign in here.</p>{:else}
+		{#if !data.r}<p class="max-w-lg border border-plate-3 bg-plate-2 p-6 text-sm leading-relaxed">publishing is ready for setup. set ADMIN_PASSWORD to a strong password of at least 10 characters in the worker secrets, then sign in here.</p>{:else}
 			<form method="POST" action="?/login" use:enhance class="max-w-sm space-y-5">
 				<label class="grid gap-2 text-sm">owner password<input type="password" name="p" autocomplete="current-password" required class="border border-plate-3 bg-plate px-3 py-3" /></label>
 				{#if form?.m}<p role="alert" class="text-sm text-ember">{form.m}</p>{/if}

@@ -6,7 +6,7 @@ const encoder = new TextEncoder();
 const lifetime = 7 * 86400;
 const session_name = 'scn_owner';
 
-export const auth_ready = () => (env.ADMIN_PASSWORD?.length ?? 0) >= 16;
+export const auth_ready = () => (env.ADMIN_PASSWORD?.length ?? 0) >= 10;
 export function bucket(event: Pick<RequestEvent, 'platform'>) {
 	if (!event.platform?.env.F) error(503, 'storage is unavailable');
 	return event.platform.env.F as R2Bucket;
@@ -33,7 +33,7 @@ export async function require_owner(event: RequestEvent) {
 	if (!await owner(event)) error(401, 'sign in to continue');
 }
 export async function login(event: RequestEvent, password: string) {
-	if (!auth_ready()) error(503, 'owner access needs an ADMIN_PASSWORD of at least 16 characters');
+	if (!auth_ready()) error(503, 'owner access needs an ADMIN_PASSWORD of at least 10 characters');
 	const key = `journal/attempts/${await digest(`${env.ADMIN_PASSWORD}:${event.getClientAddress()}`)}`;
 	let claimed = false;
 	for (let attempt = 0; attempt < 4; attempt++) {
